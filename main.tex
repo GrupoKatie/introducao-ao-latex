@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, %sumário
+    filecolor=magenta,      
+    urlcolor=magenta,
+}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Introdução ao \LaTeX}
+\rhead{Grupo Katie}
+
+\title{Introdução ao \LaTeX}
+\author{Grupo Katie \\ katie@ic.ufal.br}
+\date{6 de Março de 2020}
+
+\begin{document}
+
+\maketitle
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3]{logo.png}
+\end{figure}
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\section{Introdução}
+Querida(o) participante, este é o seu primeiro \LaTeX file. Bem-vinda(o) ao curso de Introduçao  ao {\LaTeX} ministrado pelo \textit{Grupo Katie}.
+
+\subsection{Como funciona o \LaTeX?}
+O {\LaTeX} utiliza \textit{packages}, que são pacotes contendo várias funções. Tais funções representam as funcionalidades do {\LaTeX} para facilitar nosso trabalho. Daí, você escreve um pedaço de código e compila.
+
+\subsubsection{Mas o que é compilar?}
+Compilação é, basicamente, um processo que consiste em transformar o código que você escreveu em um arquivo do tipo \textit{pdf}. Mas não se preocupe com isso, pois esse processo é feito pelo próprio \textit{Overleaf} com apenas um clique.
+
+Pressione CTRL + Enter e veja o que acontece. Interessante, não? Vamos adiante.
+
+\subsubsection{Como funcionam os blocos de código?}
+As funções do {\LaTeX} seguem a seguinte estrutura:
+\begin{center}
+$\backslash begin\{document\}
+\cdots 
+\cdots 
+\cdots
+\backslash end\{document\}$
+\end{center}
+
+Algumas características:
+\begin{itemize}
+    \item Todos os comandos iniciam com $\backslash$ (contra barra);
+    \item Todo documento inicia-se com o comando \textit{$\backslash$documentclass};
+    \item O argumento entre as chaves (em inglês \textit{curly braces}) dita o nome da função que você vai utilizar;
+    \item O símbolo de porcentagem \% inicia um comentário no código e todo o conteúdo após esse símbolo será ignorado pelo compilador.
+\end{itemize}
+
+\subsection{Material de apoio}
+O \LaTeX, o qual não é uma linguagem de programação, é simples de manusear no início e vai complicando com o tempo, vamos ver até onde conseguimos chegar juntos!
+
+Para descobrir como se faz qualquer coisa em \LaTeX, basta pesquisar no Google. Mas sem desespero, compartilhamos uma \href{https://drive.google.com/open?id=1iMswdfMALd7LLEmVAkGpLoclAJe6kZuR}{pasta} no Google Drive contendo apostilas de \LaTeX, as quais utilizamos com frequência, na intenção de guiar você.
+
+Está com preguiça de abrir o \textit{Drive}? Nós entendemos! Clique \href{https://www.ime.usp.br/~viviane/MAP2212/minicurso.pdf}{aqui} para conhecer uma apostila incrível do Instituto de Matemática e Estatística da USP.
+
+
+\begin{itemize}
+    \item Não precisa ter pressa para aprender, faça no seu tempo;
+    \item Em caso de dúvidas, só chamar;
+    \item Não se limite às apostilas que compartilhamos com você, pode-se e deve-se sempre pesquisar mais;
+    \item Pesquisar em inglês traz resultados mais consistentes na maioria das vezes.
+\end{itemize}
+
+\subsection{Utilização do GitHub}
+O GitHub é uma empresa que proporciona armazenamento e versionamento de códigos e projetos em geral. Caso você não conheça o \href{https://github.com/}{GitHub}, peça ajuda a algum(a) monitor(a) para fazer o seu cadastro. Você também pode conhecer o GitHub do Grupo Katie \href{https://github.com/GrupoKatie}{aqui}.
+
+Com o fito de manter um controle sobre o quanto você tem evoluído, peço encarecidamente que você gere um \textit{pdf} a cada vez que conseguir algo novo e diferente, pois pode ser que nós não conheçamos ainda a ferramenta que você utilizou, afinal não sabemos de tudo, né? Vá guardando esses arquivos em uma pasta do GitHub.
+
+Sim, é possível fazer upload do código para uma pasta do GitHub e eu recomendo fortemente que o faça! Deixe a pasta pública e compartilhe o link conosco para que possamos acompanhar seu desempenho.
+
+Divirta-se, isso é como programar :)
+
+\subsection{Observações Importantes}
+
+Recomendamos que você compile o código a cada mudança significativa que fizer. Às vezes você poderá cometer um erro que impeça o compilador de gerar o arquivo, então ele fica todo vermelho raivoso e desesperador... TUDO BEM, acontece. Aquele \textit{CTRL+z} resolve temporariamente o problema até você encontrar o seu erro ou substituir aquela parte do código por outra mais eficiente.
+
+Existem vários templates aqui no Overleaf, pode explorar à vontade, mas a ideia é construir o seu próprio arquivo, assim você aprende mais.
+
+Sua presença é muito importante para nós :)
+
+\newpage
+
+\section{Primeira atividade}
+A melhor forma de você aprender é praticando. Lembre-se que dispomos de monitores e monitoras para auxiliar você a qualquer momento, sinta-se à vontade. Inclua subseções e/ou subsubseções a seu gosto para manter a organização do arquivo. Então, mãos à obra!
+
+\begin{enumerate}
+    \item Inicie um novo documento na sua conta do \textit{Overleaf} contendo suas informações. 
+        \begin{enumerate}
+            \item Inclua um sumário e faça com que o arquivo seja enumerado apenas a partir da página seguinte ao sumário.
+            
+            \item Utilize a função \textit{enumerate} ou \textit{itemize} para citar 3 razões por você ter escolhido o seu curso de graduação.
+        \end{enumerate}
+         Dica: \url{https://www.latex-tutorial.com/tutorials/table-of-contents}
+    
+    \item Crie uma seção chamada \texttt{Matemática} e nesta:
+        \begin{enumerate}
+            \item Insira uma matriz 2x2 e uma matriz 3x4 de números binários aleatórios.
+            \item Insira a fórmula da Equação de Gravitação Universal de Newton.
+            \item Insira a Identidade de Euler.
+            \item Insira uma identidade trigonométrica.
+        \end{enumerate}
+    Dica: \url{https://www.codecogs.com/latex/eqneditor.php}    
+    
+    \item Crie uma seção chamada \textsc{Imagens} e:
+    \begin{enumerate}
+        \item Insira uma foto da sua cientista favorita. Preste atenção na legenda da foto. 
+        
+        \item Insira um conjunto de fotos que ilustrem as quatro fases da Lua. Utilize a função \textit{subfigure} e preste atenção nas sublegendas. Você vai precisar do pacote \textit{subcaption}.
+        \end{enumerate}
+        Dica: \url{https://www.latex-tutorial.com/tutorials/figures/}
+    
+    
+    
+    \item Busque um texto do Google contendo a definição de computação, cole-o aqui e utilize funções de \textit{hyperlink} para referenciá-lo.
+    
+    Dica: \url{https://www.overleaf.com/learn/latex/Hyperlinks}
+    
+    \item Insira uma tabela contendo 3 elementos da tabela periódica, escolhidos por você, com seus respectivos valores de massa atômica e número atômico.
+    
+    Dica: \url{https://www.tablesgenerator.com/}
+\end{enumerate}
+
+
+\end{document}
